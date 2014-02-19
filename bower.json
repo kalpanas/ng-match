@@ -33,5 +33,11 @@
     "package.json",
     "Rakefile",
     "ng-match.gemspec"
-  ]
+  ],
+  "dependencies": {
+    "angular": "~1.2.13"
+  },
+  "devDependencies": {
+    "angular-mocks": "~1.2.13"
+  }
 }
