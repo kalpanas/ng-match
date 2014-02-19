@@ -11,4 +11,4 @@ before_script:
 script: npm test
 env:
   global:
-  - secure: VxBDEdYOHzEd7UHlGRBPJosTZE/W3G+B84XC1OPwAlLEJLRXOLO0qx2Bwoqt+R0waOam5ESpRthX1o8gRt9UFsH0+JcY+D+zpCeoEJ1QlkUKY0EJNtr9uLfrmmMBN0qxZ+6HwyTy437hXkIvMELr2GZYbd+gKqj0v9hJ3xV3V+U=
+  - secure: Db/pckKu1NfS3pmk16esaZDKzbdIdhKjrt2f2ckQjPfxcAdsgvlR9l+s6RtBJr39Iatb6kdDWVS9RriASxXIi/IgOnfyuWNw5xLlUncuudMk2U8+pRmTPhwesl/lF2POxExUXWCPpG6+Muq917eRbjtlgH4tnk3UCwJE92AAjs4=
