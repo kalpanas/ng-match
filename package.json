@@ -1,0 +1,55 @@
+{
+  "name": "ng-match",
+  "version": "0.0.0",
+  "description": "Match the ng-model with another value in $scope",
+  "longDescription": "Match the ng-model with another value in $scope",
+  "main": "ng-match.js",
+  "scripts": {
+    "test": "gulp test --require LiveScript",
+    "watch": "gulp watch --require LiveScript",
+    "release": "gulp release --require LiveScript"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/tomchentw/ng-match"
+  },
+  "keywords": [
+    "angular",
+    "directive",
+    "match",
+    "password"
+  ],
+  "author": {
+    "name": "tomchentw",
+    "email": "developer@tomchentw.com",
+    "url": "https://github.com/tomchentw"
+  },
+  "license": {
+    "type": "MIT",
+    "url": "http://tomchentw.mit-license.org"
+  },
+  "bugs": {
+    "url": "https://github.com/tomchentw/ng-match/issues"
+  },
+  "homepage": "https://github.com/tomchentw/ng-match",
+  "devDependencies": {
+    "LiveScript": "~1.2.0",
+    "gulp": "~3.5.2",
+    "gulp-livescript": "0.1.1",
+    "gulp-header": "~1.0.2",
+    "gulp-uglify": "~0.2.1",
+    "gulp-rename": "~1.0.0",
+    "gulp-bump": "~0.1.4",
+    "gulp-exec": "~1.0.4",
+    "gulp-conventional-changelog": "0.1.1",
+    "karma-live-preprocessor": "~0.2.2",
+    "karma-script-launcher": "~0.1.0",
+    "karma-chrome-launcher": "~0.1.2",
+    "karma-firefox-launcher": "~0.1.3",
+    "karma-jasmine": "~0.1.5",
+    "karma-phantomjs-launcher": "~0.1.2",
+    "karma-coverage": "~0.1.5",
+    "karma": "~0.11.14",
+    "coveralls": "~2.7.1"
+  }
+}

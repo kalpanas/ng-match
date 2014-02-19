@@ -1,0 +1,37 @@
+{
+  "name": "ng-match",
+  "version": "0.0.0",
+  "authors": [
+    "tomchentw <developer@tomchentw.com>"
+  ],
+  "description": "Match the ng-model with another value in $scope",
+  "main": "ng-match.js",
+  "keywords": [
+    "angular",
+    "directive",
+    "match",
+    "password"
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/tomchentw/ng-match",
+  "private": false,
+  "ignore": [
+    "**/.*",
+    "bower_components",
+    "example",
+    "lib",
+    "node_modules",
+    "pkg",
+    "src",
+    "test",
+    "tests",
+    "tmp",
+    "vendor",
+    "bower.json",
+    "Gemfile",
+    "gulpfile.ls",
+    "package.json",
+    "Rakefile",
+    "ng-match.gemspec"
+  ]
+}
