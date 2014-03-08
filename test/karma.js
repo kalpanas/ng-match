@@ -12,8 +12,8 @@ module.exports = function(config) {
     files: [
       'bower_components/angular/angular.js',
       'bower_components/angular-mocks/angular-mocks.js',
-      'src/ng-match.ls',
-      'src/ng-match.spec.ls'
+      'lib/javascripts/ng-match.ls',
+      'test/javascripts/ng-match.spec.ls'
     ],
 
     // use dots reporter, as travis terminal does not support escaping sequences
@@ -22,11 +22,11 @@ module.exports = function(config) {
     reporters: ['progress', 'coverage'],
 
     preprocessors: {
-      'src/*.ls': ['live'],
+      '**/*.ls': ['live'],
       // source files, that you wanna generate coverage for
       // do not include tests or libraries
       // (these files will be instrumented by Istanbul)
-      'src/ng-match.ls': ['coverage']
+      'lib/javascripts/ng-match.ls': ['coverage']
     },
 
     // web server port
@@ -72,7 +72,7 @@ module.exports = function(config) {
     // optionally, configure the reporter
     coverageReporter: {
       type : 'lcovonly',
-      dir : 'coverage/'
+      dir : 'tmp/coverage/'
     },
 
     plugins: [

@@ -30,6 +30,7 @@
     "bower.json",
     "Gemfile",
     "gulpfile.ls",
+    "Makefile",
     "package.json",
     "Rakefile",
     "ng-match.gemspec"

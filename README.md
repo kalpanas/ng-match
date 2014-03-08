@@ -1,11 +1,15 @@
 # ng-match
 > Distributed via
 
-[![Gem Version](https://badge.fury.io/rb/ng-match.png)](http://badge.fury.io/rb/ng-match) [![Bower version](https://badge.fury.io/bo/ng-match.png)](http://badge.fury.io/bo/ng-match)
+[![Version     ](http://img.shields.io/gem/v/ng-match.svg)                               ](https://rubygems.org/gems/ng-match)
+[![Bower version](https://badge.fury.io/bo/ng-match.png)](http://badge.fury.io/bo/ng-match)
 
 > Match the ng-model with another value in $scope
 
-[![Build Status](https://secure.travis-ci.org/tomchentw/ng-match.png)](http://travis-ci.org/tomchentw/ng-match) [![Coverage Status](https://coveralls.io/repos/tomchentw/ng-match/badge.png)](https://coveralls.io/r/tomchentw/ng-match) [![Code Climate](https://codeclimate.com/github/tomchentw/ng-match.png)](https://codeclimate.com/github/tomchentw/ng-match)  [![Dependency Status](https://gemnasium.com/tomchentw/ng-match.png)](https://gemnasium.com/tomchentw/ng-match)
+[![Travis CI   ](http://img.shields.io/travis/tomchentw/ng-match/master.svg)             ](https://travis-ci.org/tomchentw/ng-match)
+[![Quality     ](http://img.shields.io/codeclimate/github/tomchentw/ng-match.svg)        ](https://codeclimate.com/github/tomchentw/ng-match)
+[![Coverage    ](http://img.shields.io/coveralls/tomchentw/ng-match.svg)                 ](https://coveralls.io/r/tomchentw/ng-match)
+[![Dependencies](http://img.shields.io/gemnasium/tomchentw/ng-match.svg)                 ](https://gemnasium.com/tomchentw/ng-match)
 
 
 ## Project philosophy
@@ -53,7 +57,7 @@ And include in your `angular` module definition:
 
 ## Contributing
 
-[![devDependency Status](https://david-dm.org/tomchentw/ng-match/dev-status.png?branch=master)](https://david-dm.org/tomchentw/ng-match#info=devDependencies) [![Bitdeli Badge](https://d2weczhvl823v0.cloudfront.net/tomchentw/ng-match/trend.png)](https://bitdeli.com/free "Bitdeli Badge")
+[![devDependency Status](https://david-dm.org/tomchentw/ng-match/dev-status.svg?theme=shields.io)](https://david-dm.org/tomchentw/ng-match#info=devDependencies)
 
 1. Fork it ( http://github.com/tomchentw/ng-match/fork )
 2. Create your feature branch (`git checkout -b my-new-feature`)
