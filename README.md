@@ -1,15 +1,15 @@
 # ng-match
 > Distributed via
 
-[![Version     ](http://img.shields.io/gem/v/ng-match.svg)                               ](https://rubygems.org/gems/ng-match)
-[![Bower version](https://badge.fury.io/bo/ng-match.png)](http://badge.fury.io/bo/ng-match)
+[![Version     ](https://img.shields.io/gem/v/ng-match.svg)                               ](https://rubygems.org/gems/ng-match)
+[![Bower version](https://badge.fury.io/bo/ng-match.png)](https://badge.fury.io/bo/ng-match)
 
 > Match the ng-model with another value in $scope
 
-[![Travis CI   ](http://img.shields.io/travis/tomchentw/ng-match/master.svg)             ](https://travis-ci.org/tomchentw/ng-match)
-[![Quality     ](http://img.shields.io/codeclimate/github/tomchentw/ng-match.svg)        ](https://codeclimate.com/github/tomchentw/ng-match)
-[![Coverage    ](http://img.shields.io/coveralls/tomchentw/ng-match.svg)                 ](https://coveralls.io/r/tomchentw/ng-match)
-[![Dependencies](http://img.shields.io/gemnasium/tomchentw/ng-match.svg)                 ](https://gemnasium.com/tomchentw/ng-match)
+[![Travis CI   ](https://img.shields.io/travis/tomchentw/ng-match/master.svg)             ](https://travis-ci.org/tomchentw/ng-match)
+[![Quality     ](https://img.shields.io/codeclimate/github/tomchentw/ng-match.svg)        ](https://codeclimate.com/github/tomchentw/ng-match)
+[![Coverage    ](https://img.shields.io/coveralls/tomchentw/ng-match.svg)                 ](https://coveralls.io/r/tomchentw/ng-match)
+[![Dependencies](https://img.shields.io/gemnasium/tomchentw/ng-match.svg)                 ](https://gemnasium.com/tomchentw/ng-match)
 
 
 ## Project philosophy
@@ -59,7 +59,7 @@ And include in your `angular` module definition:
 
 [![devDependency Status](https://david-dm.org/tomchentw/ng-match/dev-status.svg?theme=shields.io)](https://david-dm.org/tomchentw/ng-match#info=devDependencies)
 
-1. Fork it ( http://github.com/tomchentw/ng-match/fork )
+1. Fork it ( https://github.com/tomchentw/ng-match/fork )
 2. Create your feature branch (`git checkout -b my-new-feature`)
 3. Commit your changes (`git commit -am 'Add some feature'`)
 4. Push to the branch (`git push origin my-new-feature`)
