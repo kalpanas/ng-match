@@ -1,6 +1,6 @@
 {
   "name": "ng-match",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Match the ng-model with another value in $scope",
   "longDescription": "Match the ng-model with another value in $scope",
   "main": "ng-match.js",
