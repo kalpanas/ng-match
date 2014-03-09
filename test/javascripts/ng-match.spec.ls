@@ -63,3 +63,13 @@ describe 'ngMatch' !(...) ->
 
     expect $rootScope.signUp.$valid .toBe true
 
+  it 'should have default delay' !(...) ->
+    $rootScope.email = EMAIL
+    $rootScope.$digest!
+    $timeout.flush 100
+
+    expect $rootScope.signUp.$valid .toBe true
+    $timeout.flush 150
+    expect $rootScope.signUp.$valid .toBe false
+
+

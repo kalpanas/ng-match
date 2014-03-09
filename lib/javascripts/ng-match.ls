@@ -17,7 +17,7 @@ angular.module 'ng-match' <[]>
       promise := $timeout !->
         ngModelCtrl.$setValidity 'match' isMatch
         promise := void
-      , $attrs.ngMatchDelay or ngMatchConfig.delay
+      , $attrs.ngMatchDelay || ngMatchConfig.delay
 
   link: postLinkFn
   restrict: 'A'
