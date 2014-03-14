@@ -1,4 +1,4 @@
-/*! ng-match - v 0.0.2 - Sun Mar 09 2014 16:26:38 GMT+0800 (CST)
+/*! ng-match - v 0.0.3 - Fri Mar 14 2014 13:40:57 GMT+0800 (CST)
  * https://github.com/tomchentw/ng-match
  * Copyright (c) 2014 [tomchentw](https://github.com/tomchentw);
  * Licensed [MIT](http://tomchentw.mit-license.org)
@@ -7,26 +7,43 @@
 (function(){
   angular.module('ng-match', []).value('ngMatchConfig', {
     delay: 200
-  }).directive('ngMatch', ['$timeout', 'ngMatchConfig'].concat(function($timeout, ngMatchConfig){
-    function postLinkFn($scope, $element, $attrs, ngModelCtrl){
-      var promise;
-      promise = void 8;
+  }).controller('NgMatchCtrl', (function(){
+    var bind, prototype = constructor.prototype;
+    bind = angular.bind;
+    prototype.matchChanged = function(isMatch){
+      this.isMatch = isMatch;
+      if (this.promise) {
+        this.$timeout.cancel(this.promise);
+      }
+      this.promise = this.$timeout(this.setValidity, this.$attrs.ngMatchDelay || this.ngMatchConfig.delay);
+    };
+    prototype.setValidity = function(){
+      this.ngModelCtrl.$setValidity('match', this.isMatch);
+      this.promise = void 8;
+    };
+    constructor.$inject = ['$timeout', 'ngMatchConfig', '$scope', '$attrs'];
+    function constructor($timeout, ngMatchConfig, $scope, $attrs){
+      this.$timeout = $timeout;
+      this.ngMatchConfig = ngMatchConfig;
+      this.$scope = $scope;
+      this.$attrs = $attrs;
+      this.promise = this.isMatch = void 8;
+      this.setValidity = bind(this, this.setValidity);
       $scope.$watch(function(){
         return $scope.$eval($attrs.ngModel) === $scope.$eval($attrs.ngMatch);
-      }, function(isMatch){
-        if (promise) {
-          $timeout.cancel(promise);
-        }
-        promise = $timeout(function(){
-          ngModelCtrl.$setValidity('match', isMatch);
-          promise = void 8;
-        }, $attrs.ngMatchDelay || ngMatchConfig.delay);
-      });
+      }, angular.bind(this, this.matchChanged));
     }
+    return constructor;
+  }())).directive('ngMatch', function(){
     return {
-      link: postLinkFn,
       restrict: 'A',
-      require: 'ngModel'
+      require: ['ngModel', 'ngMatch'],
+      controller: 'NgMatchCtrl',
+      link: function(){
+        var ref$, ngModelCtrl, ngMatchCtrl;
+        ref$ = arguments[3], ngModelCtrl = ref$[0], ngMatchCtrl = ref$[1];
+        ngMatchCtrl.ngModelCtrl = ngModelCtrl;
+      }
     };
-  }));
+  });
 }).call(this);
