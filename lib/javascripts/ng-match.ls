@@ -4,21 +4,35 @@ angular.module 'ng-match' <[]>
   
   delay: 200
 
-.directive 'ngMatch' <[ 
-       $timeout  ngMatchConfig
-]> ++ ($timeout, ngMatchConfig) ->
+.controller 'NgMatchCtrl' class
 
-  !function postLinkFn ($scope, $element, $attrs, ngModelCtrl)
-    promise = void
+  const {bind} = angular
+
+  matchChanged: !(@isMatch) ->
+    @$timeout.cancel @promise if @promise
+
+    @promise = @$timeout @setValidity
+    , @$attrs.ngMatchDelay || @ngMatchConfig.delay
+
+  setValidity: !->
+    @ngModelCtrl.$setValidity 'match' @isMatch
+    @promise = void
+
+  @$inject = <[
+     $timeout   ngMatchConfig   $scope   $attrs ]>
+  !(@$timeout, @ngMatchConfig, @$scope, @$attrs) ->
+    @promise = @isMatch = void
+    @setValidity = bind @, @setValidity
+
     $scope.$watch ->
       $scope.$eval($attrs.ngModel) is $scope.$eval($attrs.ngMatch)
-    , !(isMatch) ->
-      $timeout.cancel promise if promise
-      promise := $timeout !->
-        ngModelCtrl.$setValidity 'match' isMatch
-        promise := void
-      , $attrs.ngMatchDelay || ngMatchConfig.delay
+    , angular.bind @, @matchChanged
 
-  link: postLinkFn
+.directive 'ngMatch' ->
+
   restrict: 'A'
-  require: 'ngModel'
+  require: <[ ngModel ngMatch ]>
+  controller: 'NgMatchCtrl'
+  link: !(/* $scope, $element, $attrs, $ctrls */) ->
+    const [ngModelCtrl, ngMatchCtrl] = &3
+    ngMatchCtrl.ngModelCtrl = ngModelCtrl
