@@ -35,6 +35,7 @@ describe 'ngMatch' !(...) ->
     """)($rootScope)
 
   afterEach !(...) ->
+    $timeout.verifyNoPendingTasks!
     element.remove!
 
   it 'should be valid with empty data' !(...) ->
