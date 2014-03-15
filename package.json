@@ -4,9 +4,6 @@
   "description": "Match the ng-model with another value in $scope",
   "longDescription": "Match the ng-model with another value in $scope",
   "main": "ng-match.js",
-  "scripts": {
-    "test": "make test"
-  },
   "repository": {
     "type": "git",
     "url": "https://github.com/tomchentw/ng-match"
