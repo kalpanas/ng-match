@@ -5,12 +5,19 @@ html(ng-app="demo")
     base(href="/")
     title ng-match
     meta(name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0")
+    meta(property="og:type" content="website")
+    meta(property="og:url" content="http://ng-match.tomchentw.com")
+    meta(property="og:title" content="ng-match")
+    meta(property="og:description" content="Match the ng-model with another value in $scope")
+    link(rel="stylesheet" href="//yandex.st/highlightjs/8.0/styles/default.min.css")
     link(rel="stylesheet" href="/application.css")
     script(type="text/javascript" defer src="/application.js")
   body
     include partials/header
+
     div.container-fluid(role="main")
       .page-header
         h1 ng-match
+
     include partials/footer
     
