@@ -18,19 +18,20 @@
   "ignore": [
     "**/.*",
     "bower_components",
+    "client",
     "config",
     "lib",
     "node_modules",
     "pkg",
+    "public",
     "server",
     "test",
     "tmp",
     "vendor",
-    "bower.json",
     "Gemfile",
     "gulpfile.ls",
-    "Makefile",
     "index.ls",
+    "Makefile",
     "package.json",
     "Rakefile",
     "ng-match.gemspec"
@@ -39,6 +40,7 @@
     "angular": "~1.2.13"
   },
   "devDependencies": {
+    "angular-sanitize": "~1.2.13",
     "angular-mocks": "~1.2.13",
     "angular-bootstrap": "~0.10.0",
     "twbs-bootstrap-sass": "~3.1.1"

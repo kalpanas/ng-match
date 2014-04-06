@@ -10,8 +10,8 @@ html(ng-app="demo")
     meta(property="og:title" content="ng-match")
     meta(property="og:description" content="Match the ng-model with another value in $scope")
     link(rel="stylesheet" href="//yandex.st/highlightjs/8.0/styles/default.min.css")
-    link(rel="stylesheet" href="/application.css")
-    script(type="text/javascript" defer src="/application.js")
+    link(rel="stylesheet" href=stylesheetLinkTag("application.css"))
+    script(type="text/javascript" defer src=javascriptIncludeTag("application.js"))
   body
     include partials/header
 
@@ -38,4 +38,3 @@ html(ng-app="demo")
                 != highlight('tmp/.js-cache/partials/ctrls.js')
 
     include partials/footer
-    

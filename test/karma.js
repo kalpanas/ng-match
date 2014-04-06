@@ -10,7 +10,7 @@ module.exports = function(config) {
 
     // list of files / patterns to load in the browser
     files: [
-      'bower_components/angular/angular.js',
+      'bower_components/angular/angular.min.js',
       'bower_components/angular-mocks/angular-mocks.js',
       'lib/javascripts/ng-match.ls',
       'test/javascripts/ng-match.spec.ls'
@@ -72,7 +72,7 @@ module.exports = function(config) {
     // optionally, configure the reporter
     coverageReporter: {
       type : 'lcovonly',
-      dir : 'tmp/coverage/'
+      dir : 'tmp/coverage'
     },
 
     plugins: [
