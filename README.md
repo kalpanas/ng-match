@@ -1,15 +1,15 @@
 # ng-match
 > Distributed via
 
-[![Version     ](https://img.shields.io/gem/v/ng-match.svg)                               ](https://rubygems.org/gems/ng-match)
-[![Bower version](https://badge.fury.io/bo/ng-match.png)](https://badge.fury.io/bo/ng-match)
+[![Version     ](https://img.shields.io/gem/v/ng-match.svg)                                         ](https://rubygems.org/gems/ng-match)
+[![Bower version](https://badge.fury.io/bo/ng-match.svg)                                            ](https://badge.fury.io/bo/ng-match)
 
 > Match the ng-model with another value in $scope
 
-[![Travis CI   ](https://img.shields.io/travis/tomchentw/ng-match/master.svg)             ](https://travis-ci.org/tomchentw/ng-match)
-[![Quality     ](https://img.shields.io/codeclimate/github/tomchentw/ng-match.svg)        ](https://codeclimate.com/github/tomchentw/ng-match)
-[![Coverage    ](https://img.shields.io/coveralls/tomchentw/ng-match.svg)                 ](https://coveralls.io/r/tomchentw/ng-match)
-[![Dependencies](https://img.shields.io/gemnasium/tomchentw/ng-match.svg)                 ](https://gemnasium.com/tomchentw/ng-match)
+[![Travis CI   ](https://travis-ci.org/tomchentw/ng-match.svg?branch=master)                        ](https://travis-ci.org/tomchentw/ng-match)
+[![Quality     ](https://img.shields.io/codeclimate/github/tomchentw/ng-match.svg)                  ](https://codeclimate.com/github/tomchentw/ng-match)
+[![Coverage    ](https://img.shields.io/coveralls/tomchentw/ng-match.svg)                           ](https://coveralls.io/r/tomchentw/ng-match)
+[![Dependencies](https://gemnasium.com/tomchentw/ng-match.svg)                                      ](https://gemnasium.com/tomchentw/ng-match)
 
 
 ## Project philosophy
@@ -30,6 +30,7 @@ Then include them through script tag in your HTML.
 ### **Rails** projects (Only support 3.1+)
 
 Add this line to your application's Gemfile:
+
 ```ruby
 gem 'ng-match'
 ```
@@ -46,10 +47,10 @@ Then add these lines to the top of your `app/assets/javascripts/application.js` 
 ```
 
 And include in your `angular` module definition:
-    
-    /* 'ng-match' module.
-     */    
-    var module = angular.module('my-awesome-project', ['ng-match']).
+
+```javascript
+var module = angular.module('my-awesome-project', ['ng-match']).
+```
 
 
 ## Usage

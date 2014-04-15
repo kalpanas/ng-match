@@ -1,4 +1,5 @@
-angular.module 'demo' <[
+angular.module 'application' <[
   ui.bootstrap
+  ga
   ng-match
 ]>

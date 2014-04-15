@@ -1,4 +1,4 @@
-angular.module 'demo'
+angular.module 'application'
 .filter 'formJson' ->
   const internalKeys = do
     '$parsers': true

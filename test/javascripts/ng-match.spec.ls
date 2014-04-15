@@ -1,5 +1,7 @@
 const EMAIL = 'developer@tomchentw.com'
 
+(...) <-! describe 'ng-match module'
+
 $rootScope = $timeout = void
 
 beforeEach module 'ng-match'
@@ -7,7 +9,6 @@ beforeEach inject !(_$rootScope_, _$timeout_) ->
   $rootScope  := _$rootScope_
   $timeout := _$timeout_
 
-(...) <-! describe 'module ng-match'
 it 'should be defined' !(...) ->
   expect angular .toBeDefined!
 
